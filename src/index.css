@@ -1,13 +1,96 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --color-bg: #030F26;
+  --color-bg-variant: #0C1D40;
+  --color-dark: #0D1826;
+  --color-light: #9298A6;
+  --color-white: #fff;
+
+  --color-warning: #F2CC0C;
+  --color-warning-variant: #BFA211;
+  --color-danger: #CF423C;
+  --color-primary: #0f75ce;
+
+  --bg-blur: rgba(255, 255, 255, 0.1);
+}
+
+body{
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.danger{
+  color: var(--color-danger);
+}
+
+.warning{
+  color: var(--color-warning);
+}
+
+.primary{
+  color: var(--color-primary);
+}
+
+.app{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.bg-effect{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-bg);
+}
+
+.bg-effect .circle1{
+  position: absolute;
+  top: -15px;
+  right: 10%;
+  background-color: var(--color-danger);
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+}
+.bg-effect .circle2{
+  position: absolute;
+  top: 0;
+  left: -5px;
+  background-color: var(--color-primary);
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+}
+.bg-effect .circle3{
+  position: absolute;
+  bottom: -10px;
+  left: 30%;
+  background-color: var(--color-warning);
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+}
+
+.container{
+  z-index: 2rem;
+  width: 100%;
+  height: inherit;
+  backdrop-filter: blur(15rem);
+  background: var(--bg-blur);
+  color: var(--color-white);
 }
