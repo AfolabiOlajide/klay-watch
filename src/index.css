@@ -13,12 +13,28 @@
   --color-light: #9298A6;
   --color-white: #fff;
 
-  --color-warning: #F2CC0C;
+  --color-warning: #ffd504;
   --color-warning-variant: #BFA211;
   --color-danger: #CF423C;
   --color-primary: #0f75ce;
-
+  --color-success: #1ed552;
+  
   --bg-blur: rgba(255, 255, 255, 0.1);
+}
+
+.light-mode{
+  --color-bg: #ffffff;
+  --color-bg-variant: #b3b3b3;
+  --color-dark: #edf0f5;
+  --color-light: #8b8d94;
+  --color-white: #000;
+  --bg-blur: rgba(255, 255, 255, 0.5);
+  --color-warning: #9e8402;
+  --color-success: #0d792b;
+}
+
+.light-mode .container{
+  backdrop-filter: blur(15rem);
 }
 
 body{
@@ -34,12 +50,20 @@ a{
   color: var(--color-danger);
 }
 
+.success{
+  color: var(--color-success);
+}
+
 .warning{
   color: var(--color-warning);
 }
 
 .primary{
   color: var(--color-primary);
+}
+
+.bold{
+  font-weight: bold;
 }
 
 .app{
@@ -52,7 +76,7 @@ a{
 .bg-effect{
   width: 100%;
   height: inherit;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: var(--color-bg);
@@ -89,8 +113,9 @@ a{
 .container{
   z-index: 2rem;
   width: 100%;
-  height: inherit;
+  min-height: 100vh;
   backdrop-filter: blur(15rem);
   background: var(--bg-blur);
   color: var(--color-white);
+  padding-bottom: 2rem;
 }

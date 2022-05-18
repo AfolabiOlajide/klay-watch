@@ -1,9 +1,8 @@
-// import React from 'react';
+import React from 'react';
 
-// const InfoContext = React.createContext({
-//     // tokenData: {},
-//     // nftData: {},
-//     // fetchData: fetchData()
-// });
+const InfoContext = React.createContext({
+    addressInfo: {},
+    fetchUserData: () => {}
+});
 
-// export default InfoContext;
+export default InfoContext;

@@ -61,3 +61,16 @@
     font-family: 'Cutive Mono', monospace;
     cursor: pointer;
 }
+
+.mode-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms all ease;
+}
+
+.mode-toggle span{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 500ms all ease;
+}

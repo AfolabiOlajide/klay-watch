@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 import "./Header.css";
+import InfoContext from '../../context/infoContext';
 
-const API_KEY = "ckey_47958ac13e574573ab569f046e9"
+// const API_KEY = "ckey_47958ac13e574573ab569f046e9";
 
 const Header = () => {
+    const [darkMode, setDarkMode] = useState(true)
+    const ctx = useContext(InfoContext);
     const [searchInput, setSearchInput] = useState("");
 
     const updateSearchInput = event => {
@@ -14,13 +20,17 @@ const Header = () => {
     const searchAddressHandler = async(e) => {
         e.preventDefault()
 
-        const response = await fetch(`https://api.covalenthq.com/v1/8217/address/${searchInput}/balances_v2/?quote-currency=USD&format=JSON&nft=true&no-nft-fetch=false&key=${API_KEY}`);
         
-        const responseData = await response.json();
-
-        console.log(responseData);
+        ctx.fetchUserData(searchInput);
         setSearchInput("")
     }
+
+    const changeModeHandler = () => {
+        setDarkMode(!darkMode);
+        document.body.classList.toggle('light-mode');
+    }
+
+    const modeContent = darkMode ? <span onClick={changeModeHandler} className="material-icons-sharp">light_mode</span> : <span onClick={changeModeHandler} className="material-icons-sharp">dark_mode</span>;
 
     return (
     <div className='header'>
@@ -36,11 +46,15 @@ const Header = () => {
                 <input value={searchInput} onChange={updateSearchInput} type="text" name="search"  placeholder='Search Address...'/>
             </form>
         </div>
-        <div className="address">
+        <div className="mode-toggle">
+            { modeContent }
+        </div>
+        {/* <div className="address">
             <button>
                 0x6266e51861e9a0643f2ad8c7be069de6c799d621
             </button>
-        </div>
+        </div> */}
+        <ToastContainer />
     </div>
     )
 }

@@ -1,0 +1,47 @@
+.address-info{
+    width: 70%;
+    padding: 2rem;
+    margin: 2rem auto;
+    background: transparent;
+    /* background: var(--bg-blur); */
+    /* backdrop-filter: blur(10rem); */
+    border-radius: 0 1rem 0 1rem;
+    border: 1px solid var(--color-light);
+}
+
+.address-info section{
+    margin-bottom: 3rem;
+}
+
+.address-info section h3{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.address-info .address{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--color-light);
+}
+
+.address-info .address h4{
+    /* font-weight: 300; */
+    font-size: 1.4rem;
+}
+.address-info .address a {
+    display: block;
+    padding-top: 1rem;
+}
+.address-info .address a span{
+    font-size: 1rem;
+}
+
+.no-token-data{
+    text-align: center;
+    margin: 1rem auto;
+    color: var(--color-light);
+    font-weight: bold;
+    font-size: 1.2rem;
+}

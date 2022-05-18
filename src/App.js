@@ -1,8 +1,12 @@
-
-
+import { useContext } from "react";
+import AddressInfo from "./components/addressInfo/AddressInfo";
 import Header from "./components/header/Header";
 
+import InfoContext from "./context/infoContext";
+
 function App() {
+  const ctx = useContext(InfoContext);
+  const available = ctx.addressInfo.address.trim() !== ""
   return (
     <main className="app">
       <div className="bg-effect">
@@ -12,6 +16,7 @@ function App() {
       </div>
       <div className="container">
         <Header/>
+        {available && <AddressInfo />}
       </div>
     </main>
   );
