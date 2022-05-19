@@ -39,7 +39,7 @@ const AddressInfo = () => {
                 { tokenContent }
             </section>
             <section>
-                <h3><span className="material-icons-sharp">palette</span> NFT</h3>
+                <h3><span className="material-icons-sharp">palette</span> NFTs</h3>
                 { nftContent }
             </section>
         </div>

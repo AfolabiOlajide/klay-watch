@@ -36,7 +36,7 @@ const Header = () => {
     <div className='header'>
         <div className="logo">
             <a href="#header">
-                <span className='warning'>KLAY</span>
+                <span className='warning'>KLAYTN</span>
                 <span>WATCH</span>
             </a>
         </div>

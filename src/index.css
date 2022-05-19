@@ -28,7 +28,7 @@
   --color-dark: #edf0f5;
   --color-light: #8b8d94;
   --color-white: #000;
-  --bg-blur: rgba(255, 255, 255, 0.5);
+  --bg-blur: rgba(255, 255, 255, 0.3);
   --color-warning: #9e8402;
   --color-success: #0d792b;
 }

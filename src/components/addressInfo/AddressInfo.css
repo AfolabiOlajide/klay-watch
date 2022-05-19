@@ -5,8 +5,9 @@
     background: transparent;
     /* background: var(--bg-blur); */
     /* backdrop-filter: blur(10rem); */
-    border-radius: 0 1rem 0 1rem;
-    border: 1px solid var(--color-light);
+    /* border-radius: 0 1rem 0 1rem; */
+    /* border: 1px solid var(--color-light); */
+    box-shadow: 0 0 3rem var(--bg-blur);
 }
 
 .address-info section{
@@ -19,7 +20,7 @@
 }
 
 .address-info .address{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     gap: .5rem;
