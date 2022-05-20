@@ -111,6 +111,7 @@ a{
 }
 
 .container{
+  position: relative;
   z-index: 2rem;
   width: 100%;
   min-height: 100vh;
@@ -119,3 +120,7 @@ a{
   color: var(--color-white);
   padding-bottom: 2rem;
 }
+
+/* main{
+  display: relative;
+} */

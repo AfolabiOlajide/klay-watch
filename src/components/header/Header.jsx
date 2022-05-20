@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { ToastContainer } from 'react-toastify';
+import { Link } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -35,10 +36,10 @@ const Header = () => {
     return (
     <div className='header'>
         <div className="logo">
-            <a href="#header">
+            <Link to="/home">
                 <span className='warning'>KLAYTN</span>
                 <span>WATCH</span>
-            </a>
+            </Link>
         </div>
         <div className="form-control">
             <span onClick={searchAddressHandler} className="material-icons-sharp">search</span>

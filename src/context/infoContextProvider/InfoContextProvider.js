@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
 
 import InfoContext from '../infoContext';
 
 const API_KEY = "ckey_47958ac13e574573ab569f046e9"
 
 const InfoContextProvider = (props) => {
+    let navigate = useNavigate();
     const [addressInfo, setAddressInfo] = useState({
         address: "",
         cryptocurrencyData: [],
@@ -28,6 +30,7 @@ const InfoContextProvider = (props) => {
                     nftData: responseData.data.items.filter((data) => data.type === "nft")
                 }
                 })
+                navigate("/address", { replace: true });
                 toast.success('Success', {
                     position: "top-right",
                     autoClose: 5000,

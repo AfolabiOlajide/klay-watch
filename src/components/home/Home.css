@@ -1,0 +1,36 @@
+.home {
+    margin: 1rem auto;
+    width: 80%;
+    height: max-content;
+    padding: 2rem;
+}
+
+.home .img-logo{
+    width: 100%;
+    padding: 0;
+    display: grid;
+    place-items: center;
+}
+.home .img-logo img{
+    width: 30%;
+}
+
+.home > div{
+    padding: 1rem;
+}
+
+.about-klaytn .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home > div h3{
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+.home > div p{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
