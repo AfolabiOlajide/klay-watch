@@ -9,7 +9,7 @@ import InfoContext from '../../context/infoContext';
 
 // const API_KEY = "ckey_47958ac13e574573ab569f046e9";
 
-const Header = () => {
+const Header = (props) => {
     const [darkMode, setDarkMode] = useState(true)
     const ctx = useContext(InfoContext);
     const [searchInput, setSearchInput] = useState("");
@@ -29,6 +29,7 @@ const Header = () => {
     const changeModeHandler = () => {
         setDarkMode(!darkMode);
         document.body.classList.toggle('light-mode');
+        props.onChangeDarkMode();
     }
 
     const modeContent = darkMode ? <span onClick={changeModeHandler} className="material-icons-sharp">light_mode</span> : <span onClick={changeModeHandler} className="material-icons-sharp">dark_mode</span>;
@@ -36,7 +37,7 @@ const Header = () => {
     return (
     <div className='header'>
         <div className="logo">
-            <Link to="/home">
+            <Link to="/">
                 <span className='warning'>KLAYTN</span>
                 <span>WATCH</span>
             </Link>

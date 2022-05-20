@@ -5,20 +5,16 @@ import BlackLogo from '../../assets/LogoBlack.png';
 import WhiteLogo from '../../assets/LogoWhite.png';
 import './Home.css';
 
-const Home = () => {
+const Home = (props) => {
+    
 
-    let imgUrl = document.body.classList.contains("light-mode") ? BlackLogo : WhiteLogo;
+    // let imgUrl = document.body.classList.contains("light-mode") ? BlackLogo : WhiteLogo;
 
-    // if(!document.body.classList.contains("light-mode")){
-    //     imgUrl = WhiteLogo
-    // }else{
-    //     imgUrl = BlackLogo
-    // }
 
     return (
         <div className='home'>
             <section className="img-logo">
-                <img src={imgUrl} alt="Klaytn Logo" />
+                <img src={props.isDark ? WhiteLogo : BlackLogo} alt="Klaytn Logo" />
             </section>
             <div className="about-klaytn-watch">
                 {/* <h3 className='warning'>Klaytn Watch</h3> */}

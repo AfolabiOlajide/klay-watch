@@ -7,14 +7,19 @@ import Footer from "./components/footer/Footer";
 
 // import InfoContext from "./context/infoContext";
 import Home from "./components/home/Home";
+import { useState } from "react";
 
 function App() {
+  const [isDark, setIsDark] = useState(true)
   // const ctx = useContext(InfoContext);
   // const available = ctx.addressInfo.address.trim() !== ""
 
   // const content = <Routes>
   //   <Route path="/home" element={<Home />}/>
   // </Routes>
+  const changeDarkModeHandler = () => {
+    setIsDark(!isDark);
+  }
   return (
     <main className="app">
       <div className="bg-effect">
@@ -23,9 +28,9 @@ function App() {
         <div className="circle3"></div>
       </div>
       <div className="container">
-        <Header />
+        <Header onChangeDarkMode={changeDarkModeHandler} />
         <Routes>
-              <Route path="/home" element={<Home />}/>
+              <Route path="/" element={<Home isDark={isDark} />}/>
               <Route path="/address" element={<AddressInfo />}/>
               {/* {available ? <Route path="/address" element={<AddressInfo />}/>: <Route path="/home" element={<Home />}/>} */}
           </Routes>
