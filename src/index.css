@@ -118,14 +118,9 @@ a{
   backdrop-filter: blur(15rem);
   background: var(--bg-blur);
   color: var(--color-white);
-  /* padding-bottom: 2rem; */
+  padding-bottom: 5rem;
 }
 
-/* main{
-  display: relative;
-} */
-
-/* wdujyahbsdna,sdcjmad.ca */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;

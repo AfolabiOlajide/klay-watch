@@ -7,8 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import "./Header.css";
 import InfoContext from '../../context/infoContext';
 
-// const API_KEY = "ckey_47958ac13e574573ab569f046e9";
-
 const Header = (props) => {
     const [darkMode, setDarkMode] = useState(true)
     const ctx = useContext(InfoContext);
@@ -51,11 +49,6 @@ const Header = (props) => {
         <div className="mode-toggle">
             { modeContent }
         </div>
-        {/* <div className="address">
-            <button>
-                0x6266e51861e9a0643f2ad8c7be069de6c799d621
-            </button>
-        </div> */}
         <ToastContainer />
     </div>
     )

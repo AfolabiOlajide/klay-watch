@@ -16,7 +16,6 @@ const TokenTable = () => {
         <table>
             <thead>
                 <tr>
-                    {/* <th></th> */}
                     <th>Symbol</th>
                     <th>Balance</th>
                     <th>Value</th>
@@ -25,7 +24,6 @@ const TokenTable = () => {
             <tbody>
                 {ctx.addressInfo.cryptocurrencyData.map( data => (
                     <tr key={data.contract_name}>
-                        {/* <td><span className="material-icons-sharp">expand_more</span></td> */}
                         <td className='token-symbol'> <img src={data.logo_url} alt="" /> {data.contract_ticker_symbol}</td>
                         <td className='warning bold'>{separator((data.balance / 1000000000000000000).toFixed(5))}</td>
                         <td className='success bold'>${separator(data.quote.toFixed(2))}</td>

@@ -6,11 +6,6 @@ import WhiteLogo from '../../assets/LogoWhite.png';
 import './Home.css';
 
 const Home = (props) => {
-    
-
-    // let imgUrl = document.body.classList.contains("light-mode") ? BlackLogo : WhiteLogo;
-
-
     return (
         <div className='home'>
             <section className="img-logo">

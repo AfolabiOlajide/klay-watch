@@ -1,10 +1,9 @@
 footer{
-    position: sticky;
+    font-family: 'Cutive Mono', monospace;
+    position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
-    /* background: rgba(255, 253, 253, 1); */
-    /* background: #ffffff; */
     z-index: 4;
     background-image: linear-gradient(to right bottom, #ecec7f, #ffca74, #ffa986, #ff90a6, #ee86c7, #df88ce, #d089d3, #bf8bd6, #d58fcd, #e694c3, #f29cbb, #f9a6b5);
 }

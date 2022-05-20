@@ -39,5 +39,4 @@ table tbody tr td{
 
 table tbody tr:hover{
     background-color: var(--bg-blur);
-    /* background-color: var(--color-light); */
 }

@@ -13,7 +13,12 @@ const InfoContextProvider = (props) => {
         cryptocurrencyData: [],
         nftData: []
     })
-    // const [loading, setLoading] = useState(false)
+
+    // if(window.location.reload()){
+    //     navigate("/", { replace: true });
+    // }else{
+    //     return
+    // }
 
     const fetchUserData = async(searchAddress) => {
         try {
@@ -21,7 +26,6 @@ const InfoContextProvider = (props) => {
                 pending: "Getting Information"
             });
             const responseData = await response.json();
-            // console.log(responseData.data.items)
             if(response.ok){
                 setAddressInfo(() => {
                 return {
@@ -42,7 +46,7 @@ const InfoContextProvider = (props) => {
                 });
             }else{
                 console.log("there was an error")
-                toast.error('Sorry there was an error', {
+                toast.error('Invalid Address', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,

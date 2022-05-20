@@ -5,7 +5,6 @@
 .nft-info .name-addy{
     margin-top: 2rem;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 1rem;
     cursor: pointer;
@@ -26,8 +25,6 @@
 
 .nft-info .more-info{
     padding: 1rem 0 1rem 2rem;
-    /* display: none;
-    overflow: hidden; */
 }
 
 .nft-info .more-info h5{
