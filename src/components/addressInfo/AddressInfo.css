@@ -66,4 +66,8 @@
     .address-info section h3{
         font-size: 1.2rem;
     }
+
+    .no-token-data{
+        font-size: .7rem;
+    }
 }

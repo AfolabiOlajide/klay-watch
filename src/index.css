@@ -26,7 +26,7 @@
   --color-bg: #ffffff;
   --color-bg-variant: #b3b3b3;
   --color-dark: #edf0f5;
-  --color-light: #8b8d94;
+  --color-light: #626367;
   --color-white: #000;
   --bg-blur: rgba(255, 255, 255, 0.3);
   --color-warning: #9e8402;
@@ -35,6 +35,12 @@
 
 .light-mode .container{
   backdrop-filter: blur(15rem);
+}
+
+.light-mode .form-control, 
+.light-mode .form-control input::placeholder,
+.light-mode .form-control input{
+  color: black;
 }
 
 body{
@@ -165,6 +171,7 @@ input[data-autocompleted] {
 
   :root{
     --bg-blur: rgba(255, 255, 255, 0.3);
+    --color-light: #c7c7ce;
   }
 
   .light-mode{
