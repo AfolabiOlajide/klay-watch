@@ -53,7 +53,7 @@ table tbody tr:hover{
     }
 
     table tbody tr td{
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .token-symbol img{
