@@ -162,4 +162,12 @@ input[data-autocompleted] {
   body{
     font-size: .6rem;
   }
+
+  :root{
+    --bg-blur: rgba(255, 255, 255, 0.3);
+  }
+
+  .light-mode{
+    --bg-blur: rgba(255, 255, 255, 0.5);
+  }
 }
