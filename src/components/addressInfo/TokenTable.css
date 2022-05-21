@@ -49,7 +49,11 @@ table tbody tr:hover{
 
     .token-symbol{
         gap: .7rem;
-        font-size: .7rem;
+        font-size: 1rem;
+    }
+
+    table tbody tr td{
+        font-size: 1rem;
     }
 
     .token-symbol img{
