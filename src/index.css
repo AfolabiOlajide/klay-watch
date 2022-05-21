@@ -119,6 +119,7 @@ a{
   background: var(--bg-blur);
   color: var(--color-white);
   padding-bottom: 5rem;
+  overflow: hidden;
 }
 
 input:-webkit-autofill,
@@ -128,3 +129,31 @@ input:-webkit-autofill:focus {
 input[data-autocompleted] {
     background-color: transparent !important;
 }
+
+/* @media screen and (max-width: 1200px) {
+  .bg-effect{
+    height: 100vh;
+  }
+
+  .bg-effect .circle1{
+    top: -9px;
+    right: 10px;
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .bg-effect .circle2{
+    top: 0;
+    left: -5px;
+    width: 30vh;
+    height: 30vh;
+  }
+
+  .bg-effect .circle3{
+    bottom: -5px;
+    left: 30px;
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+  }
+} */
