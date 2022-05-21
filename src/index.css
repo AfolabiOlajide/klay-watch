@@ -130,7 +130,7 @@ input[data-autocompleted] {
     background-color: transparent !important;
 }
 
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .bg-effect{
     height: 100vh;
   }
@@ -156,4 +156,10 @@ input[data-autocompleted] {
     height: 25vh;
     border-radius: 50%;
   }
-} */
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    font-size: .6rem;
+  }
+}

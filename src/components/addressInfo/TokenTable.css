@@ -40,3 +40,19 @@ table tbody tr td{
 table tbody tr:hover{
     background-color: var(--bg-blur);
 }
+
+
+@media screen and (max-width: 768px){
+    table thead tr th{
+        font-size: 1rem;
+    }
+
+    .token-symbol{
+        gap: .7rem;
+        font-size: .7rem;
+    }
+
+    .token-symbol img{
+        width: 1rem;
+    }
+}

@@ -34,10 +34,34 @@
     margin: 1rem 0;
     font-size: 1.5rem;
 }
-/* 
+
 @media screen and (max-width: 1200px){
     .home {
         width: 90%;
         padding: 1.6rem;
     }
-} */
+}
+
+@media screen and (max-width: 768px){
+    .home {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .home > div h3{
+        font-size: 1.5rem;
+    }
+
+    .home > div p{
+        font-size: .7rem;
+    }
+
+    .about-klaytn .img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-klaytn .img img{
+        width: 100%;
+    }
+}

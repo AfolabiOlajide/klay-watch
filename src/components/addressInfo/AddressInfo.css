@@ -41,3 +41,29 @@
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+@media screen and (max-width: 1200px){
+    .address-info{
+        width: 80%;
+        padding: 1.6rem;
+    }
+
+    .address-info .address h4{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .address-info{
+        width: 90%;
+        padding: 1.3rem;
+    }
+    
+    .address-info .address h4{
+        font-size: .6rem;
+    }
+
+    .address-info section h3{
+        font-size: 1.2rem;
+    }
+}

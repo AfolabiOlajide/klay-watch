@@ -35,7 +35,7 @@ const Header = (props) => {
     return (
     <div className='header'>
         <div className="logo">
-            <Link to="/">
+            <Link to="/" className='link'>
                 <span className='warning'>KLAYTN</span>
                 <span>WATCH</span>
             </Link>

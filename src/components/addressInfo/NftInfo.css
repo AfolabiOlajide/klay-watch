@@ -31,3 +31,13 @@
     font-size: 1.2rem;
     font-weight: 300;
 }
+
+@media screen and (max-width: 768px){
+    .nft-info .name-addy h3{
+        font-size: 1rem;
+    }
+
+    .nft-info .more-info h5{
+        font-size: 1rem;
+    }
+}

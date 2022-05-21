@@ -75,7 +75,7 @@
     transition: 500ms all ease;
 }
 
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .header{
         padding: 1rem 1.5rem;
         grid-template-columns: 20% 70% 10%;
@@ -84,13 +84,35 @@
 
     .logo{
         font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .form-control input{
         font-size: .8rem;
         padding: .5rem;
         letter-spacing: 2px;
     }
-} */
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        padding: 1rem 2.5rem;
+        grid-template-columns: 10% 85% 5%;
+        /* gap: .8rem; */
+    }
+    
+    .link{
+        font-size: .8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-control{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mode-toggle span{
+        font-size: 1.3rem;
+    }
+}
