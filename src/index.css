@@ -19,7 +19,7 @@
   --color-primary: #0f75ce;
   --color-success: #1ed552;
   
-  --bg-blur: rgba(255, 255, 255, 0.1);
+  --bg-blur: rgba(47, 47, 47, 0.1);
 }
 
 .light-mode{
@@ -170,7 +170,7 @@ input[data-autocompleted] {
   }
 
   :root{
-    --bg-blur: rgba(255, 255, 255, 0.3);
+    --bg-blur: rgba(47, 47, 47, 0.3);
     --color-light: #c7c7ce;
   }
 
