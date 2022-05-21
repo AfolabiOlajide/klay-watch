@@ -11,6 +11,7 @@
 }
 
 .nft-info .name-addy h3{
+    font-weight: bold;
     font-size: 1.3rem;
 }
 
@@ -29,7 +30,7 @@
 
 .nft-info .more-info h5{
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px){
