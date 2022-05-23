@@ -1,3 +1,11 @@
+# Klaytn-Covalent Unified Hackathon
+
+### Links
+
+-   Video Demo : [https://youtu.be/o0j5e5fhm9M](https://youtu.be/o0j5e5fhm9M)
+-   Klaytn Watch PowerPoint presentation :
+-   Klaytn Watch PDF presentation :
+
 # Getting Started with Klaytn Watch
 
 [Klaytn Watch](https://klaytnwatch.netlify.app/) is a DeFi dashboard that allows users to search their address and view their token holdings and balance, also available is the ability for users to view their NFT holdings and their balance(s) and price if available.
@@ -27,3 +35,5 @@ If you are on Klaytn's Watch home page, at the far right in your search bar, you
 ## What is the future of Klaytn Watch?
 
 In the coming months more features will be added as we do more research on the [Covalent API](https://www.covalenthq.com/docs/), and also we will be adding more aesthetics to give users a feeling as though they were using a Native application.
+
+We consider working on a new version of the [Klaytn Watch](https://klaytnwatch.netlify.app/) after the Hackathon, where we will add more useful features that can help users to better have a good view of the Klaytn blockchain.
