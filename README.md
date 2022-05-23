@@ -2,9 +2,8 @@
 
 ### Links
 
--   Video Demo : [https://youtu.be/o0j5e5fhm9M](https://youtu.be/o0j5e5fhm9M)
--   Klaytn Watch PowerPoint presentation :
--   Klaytn Watch PDF presentation :
+-   Video Demo (Youtube) : [https://youtu.be/o0j5e5fhm9M](https://youtu.be/o0j5e5fhm9M)
+-   Klaytn Watch Presentation : [https://github.com/AfolabiOlajide/klay-watch/tree/main/Presentation](https://github.com/AfolabiOlajide/klay-watch/tree/main/Presentation)
 
 # Getting Started with Klaytn Watch
 
