@@ -14,7 +14,7 @@ const Home = (props) => {
             <div className="about-klaytn-watch">
                 {/* <h3 className='warning'>Klaytn Watch</h3> */}
                 <p>KlaytnWatch is a Basic Defi Dashboard that can be used to track all your Tokens Balance, Value, NFT Balance  and Floor Price.</p>
-                <p><span className='success'>How to Use</span>, Paste your 0x.. Address in the Search Bar Above, Then Click Enter to Search and your account details will be displayed.</p>
+                <p><span className='success bold'>How to Use</span>, Paste your 0x.. Address in the Search Bar Above, Then Click Enter to Search and your account details will be displayed.</p>
             </div>
             <div className="about-klaytn">
                 <h3 className='warning'>Klaytn BlockChain</h3>
